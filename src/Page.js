@@ -1,5 +1,5 @@
 import React from "react"
-
+import PT from "prop-types"
 
 export default function Page({c, n = 10}) {
   let prev = c - 1 >= 1 ? c - 1 : null
@@ -29,4 +29,9 @@ export default function Page({c, n = 10}) {
 
 function range(n) {
   return [...Array(n).keys()]
+}
+
+Page.propTypes = {
+  c: PT.number.isRequired,
+  n: PT.number.isRequired
 }
