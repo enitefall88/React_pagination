@@ -3,9 +3,9 @@ import Pagination from "./Pagination";
 
 function App() {
   return <div>
-<Pagination>
+<Pagination/>
 
-</Pagination>
+
     </div>
   
 }
